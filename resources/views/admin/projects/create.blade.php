@@ -12,7 +12,7 @@
             <input type="text" class="form-control" id="title" name="title" />
 
             {{-- type selection --}}
-            <label for="category_id" class="form-label">Tipo</label>
+            <label for="type_id" class="form-label">Tipo</label>
             <select name="type_id" id="type_id" class="form-select @error('type_id') is-invalid @enderror">
                 <option value="">Nessun tipo</option>
                 @foreach ($types as $type)
