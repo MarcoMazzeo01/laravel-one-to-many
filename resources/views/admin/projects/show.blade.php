@@ -13,8 +13,16 @@
         <h1><i class="fa-regular fa-folder-open"></i> {{ $project->title }}</h1>
 
         <div class="row g-5 mt-1">
+            {{-- type --}}
+            <div class="col-3">
+                <p>
+                    <strong>Tipo</strong><br>
+                    {{ $project->type?->label }}
+                </p>
+            </div>
+
             {{-- slug --}}
-            <div class="col-4">
+            <div class="col-3">
                 <p>
                     <strong>Slug</strong><br>
                     {{ $project->slug }}
@@ -22,7 +30,7 @@
             </div>
 
             {{-- created_at --}}
-            <div class="col-4">
+            <div class="col-3">
                 <p>
                     <strong>Pubblicato</strong><br>
                     {{ $project->created_at }}
@@ -30,7 +38,7 @@
             </div>
 
             {{-- updated_at --}}
-            <div class="col-4">
+            <div class="col-3">
                 <p>
                     <strong>Aggiornato</strong><br>
                     {{ $project->updated_at }}
